@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> iPhone6s </title>
+<link rel="stylesheet" type="text/css" media="screen" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i" rel="stylesheet">
+</head>
+<body>
+    <section id="alert">
+        <div class="alert_box">
+            <h3>Please confirm by clicking OK below.</h3>
+            <button type="button" onclick="showAdd()" >OK</button>
+        </div>    
+    </section>
+    <section id="page">
+        
+        <header class="win">
+            <h1> Your chance to win * the new iPhone 6S Plus </h1>
+            <h2> The only thing that's changed is everything</h2>
+        </header>
+        <section class="content">
+            <img class="iphone" src="graphic/iPhone%20440px.jpg" />
+            <section id="main_content" class="content_box">
+                <h3>Enter your mobile number below for your chance to win a new iPhone 6S Plus:</h3>
+                <div class="select_box">
+                    <select id="operator" autocomplete="off" onchange="showDiv(this)">
+                        <option value="0">Please select operator</option>
+                        <option value="0"> M1</option>
+                        <option value="3">Singtel</option>
+                    </select>   
+                </div>
+
+                <section class="number_row">
+                    <div class="arrow">
+                        <img id="arrow" src="graphic/blue_arrow.png"/>
+                    </div>
+                        <input type="text" id="textid" class="number_input" autocomplete="off" autofocus="" tabindex="1" size="9" maxlength="9" onkeypress="return isNumberKey(event)" onkeyup="showButton(this.id)" >
+            
+                    
+                </section>
+
+                <p>Trivia weekly subscription service:<span style="color:#f21313; font-weight:bold;"> S$2.68 (w/GST)</span> per sms, 7 sms per week. Max of <span style="color:#f21313; font-weight:bold;">S$63.60 (w/GST)</span> with up to 7 questions per week. Additional, upon answering the question, you'll receive next question at <span style="color:#f21313; font-weight:bold;">S$2.68 (w/GST)</span> per sms. </p>
+
+                <button id="continue" class="button_continue" type="button" onclick="showAlert()" disabled>CONTINUE</button>
+
+                <div id="hidden" style="display:none;">
+                    <p>Yes, i have read and accepted the Terms & Conditions. This is an on-going subscription service at :<span style="color:#f21313; font-weight:bold;">S$2.68 (w/GST)</span> per sms and recived 7 sms per week. Max of :<span style="color:#f21313; font-weight:bold;">S$53.60 (w/GST)</span> per week. </p>
+                </div>
+            </section>
+           <section id="add_content" class="content_box">
+                    <h3>To subscribe,<br>text </h3>
+                    <h1 id="win_note">WIN</h1>
+                    <h3>and send to</h3>
+                    <h1 id="win_note">146079793</h1>
+                    <p>Trivia weekly subscription service: 
+						<span style="color:#f21313; font-weight:bold;"> S$2.68 (w/GST) </span>
+						per sms, 7 sms per week. Max of 
+						<span style="color:#f21313; font-weight:bold;"> S$63.60 (w/GST) </span>
+						with up to 7 questions per week. Additional, upon answering the question, you'll receive next question at 
+						<span style="color:#f21313; font-weight:bold;"> S$2.68 (w/GST) </span>
+						per sms. Hotline: 66319199.</p>
+                    <h3>to confirm your chance to win a new iPhone 6S Plus! </h3>
+            </section>
+            
+        </section>     
+    </section>
+    
+        <footer class="footer">
+            <h4>This is a trivia weekly subscription service. You will receive up to 7 questions per week including additional questions.</h4>
+            <p><strong>Summary Terms:</strong>
+			*You will receive 7 questions per week plus you can answer up to 13 additional questions each week. Each correct answer is worth 10 points. 
+			User must answer at least 100 questions correctly within the promotional period for chance of winning the prize. 
+			The player who accumulates the highest points (minimum. 1000points) in the fastest time by the end of the promotion period will be declared the winner. 
+			This is a trivia weekly subscription service. <strong>You will receive up to 7 chargeable SMS per week at S$2.68 (w/GST) per sms. 
+			Additionally, upon answering each question, you will receive the next chargeable SMS at S$2.68 (w/GST) each. Max. S$53.60 (w/GST) per week. 
+			This service is not available for Starhub users. The charges for this service will be charged to mobile phone bill. 
+			No marketing messages are sent by this content provider or third party.</strong> This is an ongoing auto-renewal subscription service until you quit. 
+			To subscribe, text WIN and send to 146079193. To unsubscribe, text STOP WIN and send to 146079193. Price subject to prevailing 7% GST and normal Telco charges apply. 
+			Only open to all postpaid and prepaid mobile subscribers except Starhub prepaid subscribers. 
+			For Singtel Prepaid users until 31 March 2015, charges will be deducted via users Prepaid account. 
+			Effective 1st April 2015, charges for Singtel prepaid customers will be deducted via Singtel mCash. Please seek parental or guardian approval if you are 18 years old and below. 
+			Closing date of the campaign: 31 July 2016, 11.59 pm SGT. The winner is contacted personally by phone within 2-3 days after closing date. 
+			Prize is released within 30 days after the winner has been contacted. Supported mobile brands include Nokia, Sony, Samsung, Motorola, LG, HTC, Xiaomi, iPhone and more. 
+			Please ensure that your mobile phone supports GPRS setting. For more info regarding our privacy policy, please click general terms and conditions link below. 
+			Hotline number: 66319199. Customer service hotline available from Mon - Fri, 9am – 6pm (except Public Holiday). IDA PRS Code applies. SBO Licence: Sam Media Pte Ltd.</p>
+            
+            <h4>General Terms & Conditions</h4>
+        
+        
+        </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+/* For Boddy  */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size:16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display:inline-block;
+    position:relative;
+}
+
+#page{
+    position:relative;
+    max-width: 1900px;
+    text-align: center;
+    margin:0 auto;
+}
+
+/* Text */
+
+h1{
+    font-size: 3em;
+    margin: 0 30% 0.5em 30%;
+}
+
+h2{
+    font-size: 1.6em;
+    font-weight: 700;
+    font-style:italic;
+}
+
+h3{
+    font-size: 1.3em;
+    font-weight: 700;
+    
+    
+}
+
+h4{
+    font-size: 0.8em
+}
+
+/* Content */
+
+.content {
+    position: relative;
+    width: 100%;
+    display:inline-block;
+}
+
+section.content img.iphone{
+    position:relative;
+    border-radius:8%;
+}
+section.content section.content_box{
+    position: relative;
+    border: 3px solid #66859a;
+    border-radius:10px;
+    box-shadow: 3px 3px 10px 1px #7a7a7a ;
+    padding: 1px 30px 5px 30px;
+    width:40%;
+    display:inline-block;
+    vertical-align:top;
+    
+}
+
+/* select - select_box */
+section.content section.content_box div.select_box select{
+    overflow: hidden;
+    border: 1px solid #757b7e;
+    box-shadow: 1px 1px 5px 1px #7a7a7a;
+    font-size: 1em;
+    padding:3px 5px;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+section.content section.content_box section.number_row img{
+    vertical-align:middle;
+    margin-left: -40px;
+    height:50px;
+    width:30px;
+    display:inline-block;
+}
+section.content section.content_box section.number_row div.arrow {
+    vertical-align:middle;
+    margin-left: -40px;
+    height:50px;
+    width:12%;
+    display:inline-block;
+       
+}
+section.content section.content_box section.number_row input{
+    
+    display: inline-block;
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    border: 2px solid #b1b0b0;
+    box-shadow: 1px 1px 8px 8px #858585 inset;
+    border-radius: 10px;
+    margin-right:6%;
+    padding: 10px 15px;
+    background-color:#d6d6d6;
+}
+
+section.content p{
+    font-size:0.9em;
+}
+
+section.content button.button_continue{
+    font-size: 1.3em;
+    font-weight: bold;
+    text-shadow: -1px -1px 2px #232526;
+    width:160px;
+    height: 40px;
+    color: #fff;
+    border: 3px solid #115a7c;
+    border-radius: 10px;
+    box-shadow:1px 1px 7px 0px #666;
+    background-color: #1b78a0;
+    margin:10px 0;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    text-align: center;
+    margin: 50px 15% 0 15%;
+    width:70%;
+}
+footer p {
+    font-size: 0.8em;
+    
+}
+
+/* Alert box */
+section#alert{
+    display:none;
+    background-color:rgba(0, 0, 0, 0.7);
+	width:100%;
+	height:340px;
+	z-index:3;
+	position:absolute;
+}
+section#alert div.alert_box{
+    width:30%;
+    margin:10% 0 0 35% ;
+    border: 10px solid white;
+    background-color:#e7e7e7 ;
+    border-radius: 10px;
+}
+section#alert div.alert_box h3{
+    font-size: 1em;
+}
+section#alert div.alert_box button{
+    font-size:.8em;
+    background-color: #1d98d4;
+    margin-bottom: 2%;
+    color: #fff;
+    border: 3px solid #1d98d4;
+    border-radius:5px;
+    padding: 7px 7px;
+    cursor: pointer;
+}
+section#alert div.alert_box button:hover{
+    background-color: #1b78a0;
+	border-color:#1b78a0;
+}
+/* Additional content */
+section.content section.content_box h3{
+    margin: 10px 10%;
+    text-align: center;
+}
+section.content section.content_box h1{
+    margin: 0 0;
+    font-weight: 300;
+}
+#add_content{
+    display: none;
+}
+/* Animate */
+
+section.content section.content_box section.number_row input {
+    animation-name: boxanim;
+    animation-duration: 0.6s;
+    animation-delay: 0s;
+    animation-timing-function:step-end;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-play-state:running;
+}
+
+@keyframes boxanim{
+    0% {
+       border:4px solid transparent;
+    }
+    50%{
+        border:4px solid #9eb4d8;
+    }
+}
+
+section.content section.content_box section.number_row img{
+    animation-duration:0.5s;
+	animation-delay: 0s;
+	animation-direction: normal;
+	animation-iteration-count:infinite;
+	animation-play-state:running;
+	animation-name:arrow;
+}
+
+@keyframes arrow {
+    0%{
+		margin-left:0px;
+	}
+	50%{
+		margin-left:15px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+
+section.content section.content_box{
+    animation-name: growing;
+    animation-duration: 1.5s;
+    animation-fill-mode:both;
+}
+
+@keyframes growing{
+    0%{
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+section.content section.content_box h1 {
+	animation-duration: 0.6s;
+	animation-timing-function:ease;
+	animation-delay:0s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+	animation-play-state:running;
+	animation-name:win;
+}
+
+@keyframes win{
+	
+	0%{
+		color:#004bcc;
+	}
+	100%{
+		color:#1f97d2 ;
+	}
+	
+}
+
+
+/* RWD */
+@media screen and (max-width:1380px){
+    h1{
+    font-size: 3em;
+    margin: 0 25% 0.5em 25%;
+    }
+}
+@media screen and (max-width:1300px){
+    h1{
+    font-size: 2.2em;
+    margin: 0 25% 0.5em 25%;
+    }
+    h2{
+    font-size: 1.3em;
+    font-weight: 700;
+    font-style:italic;
+}
+    h3{
+    font-size: 1.1em;
+    font-weight: 700;
+    
+    
+}
+    section.content img.iphone{
+    width:270px;
+}
+    
+    section.content section.content_box{
+    position: relative;
+    width:450px;   
+}
+    
+    section.content p{
+    font-size:0.8em;
+}
+
+}
+
+@media screen and (max-width:1000px){
+    h1{
+        font-size: 2em;
+        margin: 0 20% 0.5em 20%;
+    } 
+    h2{
+        font-size: 1em;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    
+   .content {
+        margin: auto;
+        width: 100%;
+        display:block;
+       
+        
+} 
+    
+    footer {
+        margin: 30px auto;
+        font-size: 0.7em;
+}
+    
+     section.content img.iphone{
+         width:200px;
+         
+
+       
+}
+    section.content section.content_box{
+   
+        width:350px;  
+        display: block;
+        margin:auto;
+    }
+    
+    @media screen and (max-width:615px){
+        
+        h1{
+            font-size: 1.6em;
+            margin:0 100px;
+        }
+        
+        h2{
+            font-size: 0.8em;
+        }
+        
+        section.content img.iphone{
+            position:absolute;
+            width:80px;
+            margin:-110px 0 0 -49%; 
+        }
+    }
+    
+    @media screen and (max-width:425px){
+        
+        #page{
+            background-image: url(graphic/iPhoneBG.jpg);
+            background-repeat: no-repeat;
+            background-size:auto;
+            height: 799px;
+            width: 100%;
+        }
+        h1{
+            font-size:1.3em;
+            width: 200px;
+        }
+        header{
+            padding-top: 120px;
+        }
+        h3{
+            font-size:0.9em;
+            padding-right: 10px;
+        }
+        
+        section.content section.content_box div.select_box select{
+            margin-right: 22px;
+        }
+        
+        section.content p{
+            font-size:0.7em;
+            padding: 10px 0;
+            margin: 0 30px 0 10px;
+        }
+        
+        section.content button.button_continue{
+            margin-right: 22px;    
+        
+        }
+        
+        section.content img.iphone{
+            display:none;
+        }
+        
+        section.content section.content_box{
+            border:none;
+            box-shadow:none;
+        }
+        
+        section.content section.content_box section.number_row div.arrow{
+            display:none;
+        }
+        
+        
+        /* Alert box */
+        
+        section#alert{
+            display:none;
+            background-color:rgba(0, 0, 0, 0.7);
+            width:100%%;
+            height:100%;
+            z-index:3;
+            position:absolute;
+            margin-right: 0px;
+        }
+        section#alert div.alert_box{
+            width:80%;
+            margin-top:50%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 8px solid white;
+            background-color:#e7e7e7 ;
+            border-radius: 10px;
+            position: relative;
+        }
+        section#alert div.alert_box h3{
+            font-size: 0.9em;
+        }
+        
+        section.content section#add_content h1{
+            margin:auto 70px;
+            
+        }
+        footer {
+            margin: 30px auto;
+            font-size: 0.6em;
+        }
+    }
